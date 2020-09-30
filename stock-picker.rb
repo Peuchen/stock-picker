@@ -1,19 +1,10 @@
 #Create a method definiton for stock_picker
 def stock_picker(prices)
+#Create a variable to store the highest profit thus far
+  highest_profit = 0
+
 #Go through each day
-highest_profit = 0
-  prices.each_with_index do | price, idx |
-    i = idx + 1
-    loop do
-      require 'pry'; binding.pry
-      profit = prices[i] - price
-      if profit > highest_profit
-        highest_profit = profit
-        best_days = [idx, i]
-      end
-      i += 1
-    end
-  end
+
 end
 #Calculate the difference (profit) between that day and every next day
 #Check if the combination of days is the highest thus far
