@@ -18,12 +18,11 @@ def stock_picker(prices)
 
 #Check if the combination of days is the highest thus far
   highest_profit = 0
-
   if profit > highest_profit
     #If so, store the profit in one variable
     highest_profit = profit
     #and the best combination of days on another variable
-
+    day_combo = [buy_day, sell_day]
   end
 
 #After checking all days, return the combination of days
